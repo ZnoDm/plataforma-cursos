@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Course;
+class HomeController extends Controller
+{
+    
+    public function __invoke()
+    {
+        $courses = Course::where('status','3')->latest('id')->get()->take(6);
+
+        //pruebas:
+        //return $courses;
+        //return Course::find(1)->rating;
+
+        return view('welcome',compact('courses'));
+    }
+}
