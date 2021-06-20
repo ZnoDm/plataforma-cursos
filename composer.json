@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "doctrine/inflector": "1.*",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -16,7 +17,8 @@
         "laravel/tinker": "^2.5",
         "laravelcollective/html": "^6.2",
         "livewire/livewire": "^2.0",
-        "paypal/rest-api-sdk-php": "*",
+        "mercadopago/dx-php": "^2.3",
+        "paypal/rest-api-sdk-php": "^1.14",
         "spatie/laravel-permission": "^4.1"
     },
     "require-dev": {
